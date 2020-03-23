@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <h1>Password Generator</h1>
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-8 col-sm-12 mx-auto">
+
+                <div class="content">
+                    <h3>Choose requirements</h3>
+                    <button onclick="generatePass()" class="buttons">Create Random Password</button>
+                    <button onClick="numbers()" class="buttons">Need Numbers?</button>
+                    <button onClick="symbols()" class="buttons">Need Symbols?</button>
+                    <button onClick="allOfIt()" class="buttons">Need Both?</button>
+                    <button onClick="lowercase()" class="buttons">LowerCase Only?</button>
+                    <input type="range" min="8" max="128" name="slide" id="slide">
+                    <br>
+                    <input type="text" id="displayPass">
+                    
+                    <p>Length: <span id = "lengthDisplay"></span></p>
+                    <br>
+                    
+                    <div id="length"></div>
+                    <div id="list">Previous: <br /></div>
+
+
+
+                </div>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
